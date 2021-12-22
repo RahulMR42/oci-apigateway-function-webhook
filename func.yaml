@@ -6,6 +6,7 @@ build_image: fnproject/python:3.8-dev
 run_image: fnproject/python:3.8
 entrypoint: /python/bin/fdk /function/func.py handler
 memory: 256
+timeout: 300
 config:
   oci_ocr_password_id: <OCI Secrets OCID of your OCI Code repo  password)
   oci_ocr_project: <Devops project name>
